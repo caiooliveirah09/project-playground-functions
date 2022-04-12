@@ -20,8 +20,8 @@ function splitSentence(string) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(arrays) {
+  return arrays[arrays.length - 1] + ", |" + arrays[0]
 }
 
 // Desafio 5
