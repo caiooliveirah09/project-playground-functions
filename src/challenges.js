@@ -33,7 +33,7 @@ function footballPoints(wins, ties) {
 function highestCount(numbers) {
   let numero = Math.max(...numbers)
   let acertos = 0
-  for(let i = 0; i <= numbers.length; i++) {
+  for (let i = 0; i <= numbers.length; i++) {
     if (numbers[i] == numero) {
       acertos++
     }
@@ -42,8 +42,14 @@ function highestCount(numbers) {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  let distanciaDoGato1 = Math.abs(cat1 - mouse)
+  let distanciaDoGato2 = Math.abs(cat2 - mouse)
+  if (distanciaDoGato1 < distanciaDoGato2) {
+    return 'cat1'
+  } else if (distanciaDoGato2 < distanciaDoGato1) {
+    return 'cat2'
+  } return "os gatos trombam e o rato foge"
 }
 
 // Desafio 8
