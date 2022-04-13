@@ -54,7 +54,7 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8
 function fizzBuzz(array) {
-  resultado = []
+  let resultado = []
   for (let i = 0; i < array.length; i++) {
     if (array[i] % 5 === 0 && array[i] % 3 === 0) {
       resultado.push("fizzBuzz")
@@ -81,6 +81,7 @@ function encode(string) {
   newString = newString.replaceAll('u','5')
   return newString
 }
+
 function decode(string) {
   let newString = string.replaceAll('1','a')
   newString = newString.replaceAll('2','e')
@@ -91,8 +92,16 @@ function decode(string) {
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(tech, name) {
+  let newList = tech.sort() 
+  let resultado = []
+  if (tech.length === 0){
+    return 'Vazio!'
+  }
+  for (let i = 0; i < newList.length; i++) {
+    resultado.push({tech: newList[i], name: name})
+  }
+  return resultado
 }
 
 module.exports = {
