@@ -37,18 +37,17 @@ function triangleCheck() {
 
 // Desafio 13
 function hydrate(string) {
-  /*let drinks = string.match(/\d+/g)
+  let drinks = string.match(/\d+/g)
   let contador = 0
-  if (drinks.length === 1 && drinks[0] === 1) {
-    return "1 copo de água"
-  } else {
-    for (let i = 0; i < drinks.length; i++) {
-      contador = 
+  for (let i in drinks) {
+    contador = contador + parseInt(drinks[i])
   }
+  if (contador === 1) {
+    return contador + " copo de água"
+  } {
+    return contador + " copos de água"
   }
-*/
 }
-
 
 module.exports = {
   generatePhoneNumber,
